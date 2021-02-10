@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AFDDC203-2C8C-3A48-8186-43C20181D3FC}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>freenect2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">freenect2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">freenect2d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">freenect2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">freenect2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">freenect2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">freenect2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">freenect2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">freenect2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4244;4200;4305;4146</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;RESOURCES_INC;CMAKE_INTDIR="Debug";freenect2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;RESOURCES_INC;CMAKE_INTDIR=\"Debug\";freenect2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\depends\libusb\MS64\dll\libusb-1.0.lib;..\depends\libjpeg-turbo64\lib\turbojpeg.lib;..\depends\glfw\lib-vc2015\glfw3dll.lib;opengl32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/lib/Debug/freenect2d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/bin/Debug/freenect2d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4267;4244;4200;4305;4146</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;RESOURCES_INC;CMAKE_INTDIR="Release";freenect2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;RESOURCES_INC;CMAKE_INTDIR=\"Release\";freenect2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\depends\libusb\MS64\dll\libusb-1.0.lib;..\depends\libjpeg-turbo64\lib\turbojpeg.lib;..\depends\glfw\lib-vc2015\glfw3dll.lib;opengl32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/lib/Release/freenect2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/bin/Release/freenect2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4267;4244;4200;4305;4146</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;RESOURCES_INC;CMAKE_INTDIR="MinSizeRel";freenect2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;RESOURCES_INC;CMAKE_INTDIR=\"MinSizeRel\";freenect2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\depends\libusb\MS64\dll\libusb-1.0.lib;..\depends\libjpeg-turbo64\lib\turbojpeg.lib;..\depends\glfw\lib-vc2015\glfw3dll.lib;opengl32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/lib/MinSizeRel/freenect2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/bin/MinSizeRel/freenect2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4244;4200;4305;4146</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;RESOURCES_INC;CMAKE_INTDIR="RelWithDebInfo";freenect2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;RESOURCES_INC;CMAKE_INTDIR=\"RelWithDebInfo\";freenect2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\figlab\Vivian_Workspace\libfreenect2\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libusb\include\libusb-1.0;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\libjpeg-turbo64\include;C:\Users\figlab\Vivian_Workspace\libfreenect2\depends\glfw\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\depends\libusb\MS64\dll\libusb-1.0.lib;..\depends\libjpeg-turbo64\lib\turbojpeg.lib;..\depends\glfw\lib-vc2015\glfw3dll.lib;opengl32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/lib/RelWithDebInfo/freenect2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/bin/RelWithDebInfo/freenect2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\ec7e81dd6a3e4c1b8041bcd9937c7f0f\resources.inc.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating resources.inc.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\figlab\Vivian_Workspace\libfreenect2
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\Debug\generate_resources_tool.exe C:/Users/figlab/Vivian_Workspace/libfreenect2 src/shader/debug.fs src/shader/default.vs src/shader/filter1.fs src/shader/filter2.fs src/shader/stage1.fs src/shader/stage2.fs src/opencl_depth_packet_processor.cl src/opencl_kde_depth_packet_processor.cl &gt; C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/resources.inc.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\Debug\generate_resources_tool.exe;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\debug.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\default.vs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\filter1.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\filter2.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\stage1.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\stage2.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_depth_packet_processor.cl;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_kde_depth_packet_processor.cl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\resources.inc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating resources.inc.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\figlab\Vivian_Workspace\libfreenect2
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\Release\generate_resources_tool.exe C:/Users/figlab/Vivian_Workspace/libfreenect2 src/shader/debug.fs src/shader/default.vs src/shader/filter1.fs src/shader/filter2.fs src/shader/stage1.fs src/shader/stage2.fs src/opencl_depth_packet_processor.cl src/opencl_kde_depth_packet_processor.cl &gt; C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/resources.inc.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\Release\generate_resources_tool.exe;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\debug.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\default.vs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\filter1.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\filter2.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\stage1.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\stage2.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_depth_packet_processor.cl;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_kde_depth_packet_processor.cl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\resources.inc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating resources.inc.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\figlab\Vivian_Workspace\libfreenect2
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\MinSizeRel\generate_resources_tool.exe C:/Users/figlab/Vivian_Workspace/libfreenect2 src/shader/debug.fs src/shader/default.vs src/shader/filter1.fs src/shader/filter2.fs src/shader/stage1.fs src/shader/stage2.fs src/opencl_depth_packet_processor.cl src/opencl_kde_depth_packet_processor.cl &gt; C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/resources.inc.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\MinSizeRel\generate_resources_tool.exe;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\debug.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\default.vs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\filter1.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\filter2.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\stage1.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\stage2.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_depth_packet_processor.cl;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_kde_depth_packet_processor.cl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\resources.inc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating resources.inc.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\figlab\Vivian_Workspace\libfreenect2
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\RelWithDebInfo\generate_resources_tool.exe C:/Users/figlab/Vivian_Workspace/libfreenect2 src/shader/debug.fs src/shader/default.vs src/shader/filter1.fs src/shader/filter2.fs src/shader/stage1.fs src/shader/stage2.fs src/opencl_depth_packet_processor.cl src/opencl_kde_depth_packet_processor.cl &gt; C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/resources.inc.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\bin\RelWithDebInfo\generate_resources_tool.exe;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\debug.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\default.vs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\filter1.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\filter2.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\stage1.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\shader\stage2.fs;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_depth_packet_processor.cl;C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_kde_depth_packet_processor.cl;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\resources.inc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/figlab/Vivian_Workspace/libfreenect2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/figlab/Vivian_Workspace/libfreenect2 -BC:/Users/figlab/Vivian_Workspace/libfreenect2/build_server --check-stamp-file C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\exportheader.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindGLFW3.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindLibUSB.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindOpenCL.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindOpenNI2.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindTegraJPEG.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindTurboJPEG.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\GenerateResources.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\SetupLibfreenect2Threading.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2.pc.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2Version.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/figlab/Vivian_Workspace/libfreenect2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/figlab/Vivian_Workspace/libfreenect2 -BC:/Users/figlab/Vivian_Workspace/libfreenect2/build_server --check-stamp-file C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\exportheader.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindGLFW3.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindLibUSB.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindOpenCL.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindOpenNI2.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindTegraJPEG.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindTurboJPEG.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\GenerateResources.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\SetupLibfreenect2Threading.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2.pc.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2Version.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/figlab/Vivian_Workspace/libfreenect2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/figlab/Vivian_Workspace/libfreenect2 -BC:/Users/figlab/Vivian_Workspace/libfreenect2/build_server --check-stamp-file C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\exportheader.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindGLFW3.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindLibUSB.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindOpenCL.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindOpenNI2.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindTegraJPEG.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindTurboJPEG.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\GenerateResources.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\SetupLibfreenect2Threading.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2.pc.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2Version.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/figlab/Vivian_Workspace/libfreenect2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/figlab/Vivian_Workspace/libfreenect2 -BC:/Users/figlab/Vivian_Workspace/libfreenect2/build_server --check-stamp-file C:/Users/figlab/Vivian_Workspace/libfreenect2/build_server/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\exportheader.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindGLFW3.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindLibUSB.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindOpenCL.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindOpenNI2.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindTegraJPEG.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\FindTurboJPEG.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\GenerateResources.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\cmake_modules\SetupLibfreenect2Threading.cmake;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2.pc.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\freenect2Version.cmake.in;C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\protocol\command.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\protocol\command_transaction.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\protocol\response.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\protocol\usb_control.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\usb\event_loop.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\usb\transfer_pool.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\logger.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\logging.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\async_packet_processor.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\depth_packet_processor.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\depth_packet_stream_parser.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\allocator.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\frame_listener.hpp" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\frame_listener_impl.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\libfreenect2.hpp" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\color_settings.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\led_settings.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\packet_pipeline.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\packet_processor.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\libfreenect2\registration.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\resource.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\rgb_packet_processor.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\rgb_packet_stream_parser.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\include\internal\libfreenect2\threading.h" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\transfer_pool.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\event_loop.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\usb_control.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\allocator.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\frame_listener_impl.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\packet_pipeline.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\rgb_packet_stream_parser.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\rgb_packet_processor.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\depth_packet_stream_parser.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\depth_packet_processor.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\cpu_depth_packet_processor.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\resource.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\command_transaction.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\registration.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\logging.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\libfreenect2.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\tinythread\tinythread.cpp" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\resources.inc.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\libfreenect2\config.h" />
+    <ClInclude Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\libfreenect2\export.h" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\turbo_jpeg_rgb_packet_processor.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\flextGL.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opengl_depth_packet_processor.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_depth_packet_processor.cpp" />
+    <ClCompile Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\src\opencl_kde_depth_packet_processor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\ZERO_CHECK.vcxproj">
+      <Project>{BB2A03D8-547A-3038-8C9E-006C954CCDDB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\generate_resources_tool.vcxproj">
+      <Project>{F198FB57-691A-30E3-8188-D97EBB366361}</Project>
+      <Name>generate_resources_tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

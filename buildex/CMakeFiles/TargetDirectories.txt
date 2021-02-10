@@ -1,0 +1,11 @@
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/CMakeFiles/generate_resources_tool.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/CMakeFiles/freenect2.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/CMakeFiles/freenect2-openni2.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/CMakeFiles/INSTALL.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/CMakeFiles/install-openni2.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/CMakeFiles/ALL_BUILD.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/CMakeFiles/ZERO_CHECK.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/doc/CMakeFiles/INSTALL.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/examples/CMakeFiles/Protonect.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/examples/CMakeFiles/INSTALL.dir
+C:/Users/figlab/Vivian_Workspace/libfreenect2/buildex/examples/CMakeFiles/ALL_BUILD.dir

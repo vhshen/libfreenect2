@@ -75,7 +75,6 @@ int main(int argc, char *argv[])
 /// [context]
 
   std::string serial = "";
-  bool enable_rgb = false;
   bool enable_depth = true;
   int deviceId = -1;
   pipeline = new libfreenect2::OpenCLKdePacketPipeline(deviceId);
@@ -112,7 +111,6 @@ int main(int argc, char *argv[])
 /// [listeners]
   int types = 0;
   types |= libfreenect2::Frame::Depth;
-  types |= libfreenect2::Frame::Ir;
   libfreenect2::SyncMultiFrameListener listener(types);
   libfreenect2::FrameMap frames;
   libfreenect2::Freenect2Device::Config config;
@@ -124,7 +122,7 @@ int main(int argc, char *argv[])
 /// [listeners]
 
 /// [start]
-  if (!dev->startStreams(enable_rgb, enable_depth))
+  if (!dev->startStreams(0, enable_depth))
     return -1;
 
   std::cout << "device serial: " << dev->getSerialNumber() << std::endl;
@@ -191,28 +189,25 @@ int main(int argc, char *argv[])
       return -1;
     }
     libfreenect2::Frame *depth = frames[libfreenect2::Frame::Depth];
-    libfreenect2::Frame *ir = frames[libfreenect2::Frame::Ir];
 /// [loop start]
 
     /// ADDED socket logic test
     // Send stuff
-    float *depth_data = (float *)depth->data;
-    iResult = send( ConnectSocket, (char *)depth_data, (depth->width)*(depth->height)*4, 0 );
+    float *frame_data = (float *)depth->data;
+    for (int i = 0; i < depth->height; i++){
+      for (int j=0; j < depth->width; j++){
+        bwValues[i*depth->width + j] = static_cast<char>(frame_data[i * depth->width + j]);
+      }
+    }
+    /// reinterpret_cast<const char*>(depth->data)
+    // iResult = send( ConnectSocket, bwValues, (depth->width)*(depth->height), 0 );
+    iResult = send( ConnectSocket, (char *)frame_data, (depth->width)*(depth->height)*4, 0 );
     if (iResult == SOCKET_ERROR) {
-        printf("depth send failed with error: %d\n", WSAGetLastError());
+        printf("send failed with error: %d\n", WSAGetLastError());
         closesocket(ConnectSocket);
         WSACleanup();
         return 1;
     }
-    // // sending IR image
-    // float *frame_data = (float *)ir->data;
-    // iResult = send( ConnectSocket, (char *)frame_data, (depth->width)*(depth->height)*4, 0 );
-    // if (iResult == SOCKET_ERROR) {
-    //     printf("IR send failed with error: %d\n", WSAGetLastError());
-    //     closesocket(ConnectSocket);
-    //     WSACleanup();
-    //     return 1;
-    // }
 
     framecount++;
     if (framecount % 100 == 0)

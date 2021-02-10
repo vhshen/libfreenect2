@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\figlab\Vivian_Workspace\libfreenect2\build_server\CMakeFiles\eb267b6b1de8eb30aaa82c2bead45016\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A1ED57A9-00D4-3595-A655-584E5D29BF5F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
