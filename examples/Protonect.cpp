@@ -79,6 +79,7 @@ int main(int argc, char *argv[])
   bool enable_depth = true;
   int deviceId = -1;
   pipeline = new libfreenect2::OpenCLKdePacketPipeline(deviceId);
+  //pipeline = new libfreenect2::CpuPacketPipeline(deviceId);
 
 /// [discovery]
   if(freenect2.enumerateDevices() == 0)
